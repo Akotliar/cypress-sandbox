@@ -17,7 +17,7 @@ context('Sony Design Stories', () => {
         })
     })
   
-    it.only('is displayed', () => {
-        cy.getPlus('.current > .tag-link').should('be.visible')
+    it('is displayed', () => {
+        cy.getSonyWebsitePlus('.current > .tag-link').should('be.visible')
     })
 });
