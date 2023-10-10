@@ -33,7 +33,7 @@ import { VIEWPORT_SIZE, viewportSize } from './e2e'
  *       foregroundColor: "#000000",
  *       
  */
-Cypress.Commands.add('getPlus', (selector, options) => {
+Cypress.Commands.add('getSonyWebsitePlus', (selector, options) => {
     let width = Cypress.config('viewportWidth')
      cy.log(`screen width: ${width}`)
      return cy.get(selector).then((element) => {
